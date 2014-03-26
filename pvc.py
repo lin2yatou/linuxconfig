@@ -21,7 +21,7 @@ def initpyfile():
             os.system('vim '+filename)
         else:
             with open(filename, 'w') as f:
-                f.write(r'#!/usr/bin/python')
+                f.write(r'#!/usr/bin/env python')
                 f.write(os.linesep)
                 f.write(r'# Filename: ' + filename)
                 f.write(os.linesep)
